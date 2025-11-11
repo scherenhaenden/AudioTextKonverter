@@ -16,13 +16,23 @@ This document serves as a log of all significant activities, decisions, and mile
 - **Status**: All initial documentation has been created successfully. The project is now ready for the setup of the development environment and the commencement of Phase 1.
 
 ---
+## 2025-11-11
+
+### Backend Setup
+- **Objective**: To set up the initial structure and configuration for the FastAPI backend.
+- **Activities**:
+  - Set up the backend project structure with `app`, `core`, `db`, `models`, `schemas`, and `api` directories.
+  - Initialized the Python project with Poetry and installed all necessary dependencies.
+  - Created the initial FastAPI application with a health check endpoint.
+  - Set up the database connection and core configuration, including environment variable management.
+  - Created the SQLAlchemy User model and Pydantic User schemas.
+  - Implemented the initial Alembic migration to create the `users` table.
+- **Status**: The backend has been successfully scaffolded. The next step is to implement the user authentication endpoints.
+
 
 ## Planned Next Steps
 
 - **Backend Setup**:
-  - Initialize the Python project using Poetry.
-  - Set up the FastAPI application structure.
-  - Configure the database with SQLAlchemy and set up initial Alembic migrations.
   - Implement the initial user model and authentication endpoints.
 
 - **Frontend Setup**:
