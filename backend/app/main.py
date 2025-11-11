@@ -9,5 +9,5 @@ def read_root():
 
 
 @app.get("/health")
-def health_check():
+def health_check() -> dict:
     return {"status": "ok"}
