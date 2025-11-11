@@ -16,7 +16,7 @@ This document outlines the development plan for MagnetarAion, a multi-platform a
   - Integrate a library for audio format conversion (e.g., pydub).
   - Implement core logic for handling audio uploads and processing.
   - Create a service for text-to-speech (TTS) and speech-to-text (STT) using a local LLM (e.g., a small, efficient model to start).
-  - **Deliverable**: API endpoints for uploading audio, converting it to text, and vice-versa.
+  - **Deliverable**: API endpoints for uploading audio, converting it to text, and vice versa.
 
 - **Week 3: External API Integration and Refinement**
   - Integrate Google's Speech-to-Text and Text-to-Speech APIs.
