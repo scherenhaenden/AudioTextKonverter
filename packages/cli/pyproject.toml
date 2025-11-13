@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "magnetaraion-cli"
+version = "0.1.0"
+description = "CLI for MagnetarAion"
+authors = ["Jules <agent@example.com>"]
+packages = [{include = "cli", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.9.0"
+magnetaraion-core = {path = "../core", develop = true}
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
