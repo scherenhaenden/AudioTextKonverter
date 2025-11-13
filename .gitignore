@@ -1,1 +1,14 @@
+# IDE
 .idea/
+
+# Environment
+.env
+
+# Databases
+test.db
+
+# Python
+__pycache__/
+
+# Logs
+*.log
