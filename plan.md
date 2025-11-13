@@ -15,7 +15,8 @@ This document outlines the development plan for MagnetarAion, a multi-platform a
 - **Week 2: Audio Processing and Transformation**
   - Integrate a library for audio format conversion (e.g., pydub).
   - Implement core logic for handling audio uploads and processing.
-  - Create a service for text-to-speech (TTS) and speech-to-text (STT) using a local LLM (e.g., a small, efficient model to start).
+  - Create a service for text-to-speech (TTS) and speech-to-text (STT) using local audio models or local AI/ML models focused on audio (e.g., Whisper for STT, Coqui TTS for TTS, or similar audio-focused models).
+  - Examples: Whisper (or Whisper-compatible models) for STT; Coqui TTS, Tacotron 2, or Glow-TTS variants for TTS.
   - **Deliverable**: API endpoints for uploading audio, converting it to text, and vice-versa.
 
 - **Week 3: External API Integration and Refinement**
@@ -45,8 +46,7 @@ This document outlines the development plan for MagnetarAion, a multi-platform a
   - Implement a settings page for selecting AI/ML models and audio quality.
   - **Deliverable**: A user can generate audio from text and play it back.
 
-- **Week 7: UI Polishing and Testing**
-  - Refine the user interface and user experience.
+- **Week 7: UI Polishing and Testing**n  - Refine the user interface and user experience.
   - Implement responsive design for different screen sizes.
   - Write end-to-end tests for the frontend application.
   - **Deliverable**: A polished and tested Angular frontend.
