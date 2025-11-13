@@ -8,33 +8,19 @@ This document provides a high-level overview of the system architecture for Magn
 - **Scalability**: The backend is built with a stateless architecture, allowing it to be easily scaled horizontally.
 - **Flexibility**: The application is designed to be platform-agnostic, with support for web, desktop, and console environments.
 
-## Architecture Components
+## Monorepo Architecture
 
-### 1. Backend (Python/FastAPI)
+This repository is a monorepo that contains the following packages and applications:
 
-- **Framework**: FastAPI is used for building the RESTful API, providing high performance and automatic documentation.
-- **Database**: A PostgreSQL database is used for data persistence, with SQLAlchemy as the ORM and Alembic for migrations.
-- **Authentication**: JWT (JSON Web Tokens) are used for securing the API endpoints.
-- **Audio Processing**: A dedicated service layer handles audio processing, including format conversion and quality adjustments.
-- **AI/ML Integration**: A swappable service layer integrates with both local and cloud-based AI/ML models for speech-to-text and text-to-speech.
+### Packages
 
-### 2. Frontend (Angular)
+-   `packages/core`: The core logic of the application, shared between the `api` and `cli` packages. This includes database models, schemas, and business logic.
+-   `packages/api`: The backend API, built with FastAPI. This package is responsible for exposing the core logic through a RESTful API.
+-   `packages/cli`: A command-line interface for the application. This package provides a way to interact with the core logic from the terminal.
 
-- **Framework**: Angular is used for building the single-page application (SPA).
-- **Component Architecture**: The application is built using standalone components, promoting reusability and modularity.
-- **State Management**: A lightweight state management solution will be used to manage application state.
-- **API Communication**: A centralized `ApiService` handles all communication with the backend.
+### Applications
 
-### 3. Desktop Application (Tauri)
-
-- **Framework**: Tauri is used to wrap the Angular frontend into a cross-platform desktop application.
-- **Native Integration**: Tauri allows for integration with native desktop features, such as file system access and notifications.
-- **Security**: The desktop application benefits from Tauri's security features, such as a sandboxed webview.
-
-### 4. Console/CLI (Python)
-
-- **Interface**: A command-line interface (CLI) is provided for users who prefer to interact with the application from the terminal.
-- **Functionality**: The CLI exposes the core functionality of the application, such as audio transcription and synthesis.
+-   `apps/web`: The frontend application, built with Angular. This application is a single-page application that communicates with the `api` package.
 
 ## Data Flow
 

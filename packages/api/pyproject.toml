@@ -9,12 +9,10 @@ package-mode = false
 python = "^3.9"
 fastapi = "^0.104.1"
 uvicorn = {extras = ["standard"], version = "^0.24.0"}
-sqlalchemy = "^2.0.23"
-psycopg2-binary = "^2.9.9"
 alembic = "^1.12.1"
 passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 python-jose = {extras = ["cryptography"], version = "^3.3.0"}
-python-dotenv = "^1.0.0"
+magnetaraion-core = {path = "../core", develop = true}
 
 [build-system]
 requires = ["poetry-core"]
