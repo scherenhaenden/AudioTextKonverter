@@ -10,12 +10,12 @@ This document provides a high-level overview of the system architecture for Magn
 
 ## Project Structure
 
-This repository contains the following components:
+This repository is a monorepo containing the following components:
 
--   `core`: The core logic of the application, shared between the `api` and `cli` packages. This includes database models, schemas, and business logic.
--   `api`: The backend API, built with FastAPI. This package is responsible for exposing the core logic through a RESTful API.
--   `cli`: A command-line interface for the application. This package provides a way to interact with the core logic from the terminal.
--   `web`: The frontend application, built with Angular. This application is a single-page application that communicates with the `api` package.
+-   `packages/core`: The core logic of the application, shared between the `api` and `cli` packages. This includes database models, schemas, and business logic.
+-   `packages/api`: The backend API, built with FastAPI. This package is responsible for exposing the core logic through a RESTful API.
+-   `packages/cli`: A command-line interface for the application. This package provides a way to interact with the core logic from the terminal.
+-   `apps/web`: The frontend application, built with Angular. This application is a single-page application that communicates with the `api` package.
 
 ## Data Flow
 
