@@ -39,3 +39,13 @@ This document serves as a log of all significant activities, decisions, and mile
   - Initialize the Angular project using the Angular CLI.
   - Establish the basic project structure with standalone components.
   - Set up the core `ApiService` for backend communication.
+
+---
+## 2025-11-15
+
+### Monorepo Refactor and Documentation Update
+- **Objective**: To refactor the project into a monorepo structure and update the documentation to reflect this change.
+- **Activities**:
+  - Merged the `feat/monorepo-refactor` branch, which reorganizes the project into `apps` and `packages` directories.
+  - Updated `architecture.md` to describe the new monorepo structure.
+- **Status**: The project structure has been updated, and the documentation reflects the changes.

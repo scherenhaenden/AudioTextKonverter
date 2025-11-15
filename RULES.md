@@ -41,7 +41,7 @@ This document outlines the coding standards, conventions, and architectural rule
 - **CORS**: CORS will be configured to allow requests strictly from the Angular frontend's domain.
 
 ### Database (SQLAlchemy)
-- **Password Hashing**: Passwords must be securely hashed using `passlib` with `bcrypt` before being stored. This logic will be encapsulated in `backend/app/core/security.py`.
+- **Password Hashing**: Passwords must be securely hashed using `passlib` with `bcrypt` before being stored. This logic will be encapsulated in `core/src/core/security.py`.
 - **Enums**: Use Python `Enums` for model fields with a predefined set of choices (e.g., status, priority) to ensure data consistency.
 - **Migrations**: Database migrations are managed with Alembic.
     - Before creating a new migration, ensure the database is upgraded to the latest version (`python -m alembic -c alembic.ini upgrade head`).
