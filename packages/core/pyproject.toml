@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "magnetar-aion-core"
+name = "audiotextkonverter-core"
 version = "0.1.0"
 description = ""
 authors = ["Jules"]
 packages = [
-    { include = "magnetar_aion" }
+    { include = "audiotextkonverter" }
 ]
 
 [tool.poetry.dependencies]

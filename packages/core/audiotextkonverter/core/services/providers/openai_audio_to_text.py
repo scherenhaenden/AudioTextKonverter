@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Union
 from openai import OpenAI
-from magnetar_aion.core.services.audio_to_text import AudioToTextService
+from audiotextkonverter.core.services.audio_to_text import AudioToTextService
 
 class OpenAIAudioToTextService(AudioToTextService):
     """

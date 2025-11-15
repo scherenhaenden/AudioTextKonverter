@@ -1,7 +1,7 @@
 import pytest
 from pathlib import Path
 from unittest.mock import MagicMock
-from magnetar_aion.core.services.providers.openai_audio_to_text import OpenAIAudioToTextService
+from audiotextkonverter.core.services.providers.openai_audio_to_text import OpenAIAudioToTextService
 
 @pytest.fixture
 def mock_openai_client():
@@ -17,7 +17,7 @@ def test_openai_audio_to_text_service_transcribe(mocker, mock_openai_client):
     Tests that the OpenAIAudioToTextService correctly calls the OpenAI API.
     """
     # Arrange
-    mocker.patch('magnetar_aion.core.services.providers.openai_audio_to_text.OpenAI', return_value=mock_openai_client)
+    mocker.patch('audiotextkonverter.core.services.providers.openai_audio_to_text.OpenAI', return_value=mock_openai_client)
     service = OpenAIAudioToTextService(api_key="fake_api_key")
 
     # Create a dummy audio file
